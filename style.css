@@ -1,0 +1,184 @@
+body{
+    background-color:#ffffff;
+    font-family:'Chakra Petch', sans-serif;
+}
+
+.title{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:-70px;
+}
+
+/* căn giữa toàn bộ */
+.center-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:50px;
+}
+
+/* mèo */
+.cat-img{
+    width:450px;
+    pointer-events:none;
+
+}
+
+/* box nhập */
+.input-box{
+    position: relative;
+    margin-top: 20px;
+    transform: translateY(-210px);
+
+}
+
+.box-img{
+    width: 600px;
+    top:-110px;
+
+}
+
+/* ô nhập nằm trong khung */
+.name-input{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:70%;
+    height:50px;
+
+    border:none;
+    outline:none;
+    background:transparent;
+
+    font-size:40px;
+    text-align:center;
+    font-family:'Chakra Petch', sans-serif;
+}
+
+/* hoa rơi */
+.flower-column{
+    position:fixed;
+    left:20px;
+    top:0;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    animation:fall 8s linear infinite;
+}
+
+.flower-column img{
+    width:60px;
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes fall{
+    0%{transform:translateY(-50%);}
+    100%{transform:translateY(0);}
+}
+
+/* heart container */
+#heart-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+
+/* heart bay */
+.pixel-heart{
+    position:absolute;
+    width:40px;
+    animation:float 6s linear forwards;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-800px) rotate(360deg);
+        opacity:0;
+    }
+}
+.cat-img{
+    position: relative;
+    z-index: 2;
+}
+.input-box{
+    position: relative;
+    z-index: 1;
+}
+
+.paw-btn{
+    width:110px;
+    height: 100px;
+    cursor:pointer;
+    transition:0.2s;
+
+    position:relative;
+    margin-top:-180px;   /* kéo lên gần box */
+}
+
+.paw-container{
+    display:flex;
+    justify-content:center;
+}
+
+.paw-btn:hover{
+    transform:scale(1.1);
+}
+
+.paw-btn:active{
+    transform:scale(0.95);
+}
+.corner-sticker{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:200px;
+}
+.rightup-sticker{
+    position:fixed;
+    top:0px;
+    right:0px;
+    width:400px
+}
+.inpage-sticker{
+    position: fixed;
+    top:250px;
+    right:100px;
+    width:350px
+}
+.downp-sticker{
+   position: fixed;
+    bottom:0px;
+    left:100px;
+    width:300px
+}
+.cat-gif{
+    position: fixed;
+    bottom:20px;
+    width:150px;
+    left:60%;
+}
+.sun-img{
+    position: fixed;
+    top:40px;
+    left:30%; 
+    width:150px;
+}
+.hwm-img{
+    position: fixed;
+    top:100px;
+    left:5%;
+    width:300px;
+}

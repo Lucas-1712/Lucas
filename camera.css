@@ -1,0 +1,108 @@
+body{
+    background-color:#F8E6EC;
+}
+
+
+
+h1{
+    text-align:center;
+    font-size:36px;
+    color:rgb(235,128,240);
+    font-family:'Playfair Display', serif;
+    font-style:italic;
+    font-weight:700;
+}
+
+.camera-box{
+    position:relative;
+    width:400px;
+    height: 200px;
+    margin:auto;
+}
+
+#live-video{
+    position:absolute;
+    top:85px;
+    left:18px;
+    width:365px;
+    height:349px;
+    object-fit:cover;
+    transform: scaleX(-1);
+    z-index:2;
+}
+
+.frame{
+    position:relative;
+    width:100%;
+    z-index:1;
+    pointer-events:none;
+}
+#leaf-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.leaf{
+position:absolute;
+top:-50px;
+width:40px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:translate(0,0) rotate(0deg);
+opacity:1;
+}
+
+50%{
+transform:translate(60px,50vh) rotate(180deg);
+}
+
+100%{
+transform:translate(-60px,100vh) rotate(360deg);
+opacity:0.8;
+}
+
+}
+.note1{
+    position: absolute;
+    width: 550px;
+    bottom:150px;
+    left:50px;
+}
+.note2{
+    position: absolute;
+    width: 550px;
+    bottom:50px;
+    right:0px;
+}
+.arrow1{
+    position:absolute;
+    width:400px;
+    top:100px;
+    right:100px;
+}
+.arrow2{
+    position: absolute;
+    width:400px;
+    bottom:0px;
+    left:200px;
+}
+.footer{
+    position: absolute;
+    width:600px;
+    bottom:0px;
+    left:30%;
+    right:50%;
+    z-index:3;
+}
+.leaf{
+filter:drop-shadow(0 3px 3px rgba(0,0,0,0.2));
+}
