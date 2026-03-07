@@ -215,6 +215,7 @@ animation:heartFloat 3s linear infinite;
 }
 body{
 position:relative;
+z-index:1;
 }
 
 body::before{
@@ -233,5 +234,6 @@ opacity:0.25;
 z-index:0;
 
 }
+
 
 
