@@ -1,6 +1,6 @@
 const container = document.getElementById("heart-container");
 
-const images = ["Heart.png"];
+const images = ["Heart.PNG"];
 
 function createSticker(){
 
@@ -34,5 +34,6 @@ stream.getTracks().forEach(track => track.stop());
 .catch(err => {
 console.log("Camera permission denied");
 });
+
 
 }
