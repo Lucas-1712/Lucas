@@ -6,11 +6,11 @@ navigator.mediaDevices.getUserMedia({ video: true })
 });
 const container = document.getElementById("leaf-container");
 
-const images=["Leaf.png"];
+const images=["leaf.png"];
 function createLeaf(){
 
 const leaf = document.createElement("img")
-leaf.src = "Leaf.png"
+leaf.src = "leaf.png"
 leaf.className = "leaf"
 
 let startX = Math.random() * window.innerWidth
@@ -31,3 +31,4 @@ leaf.remove()
 
 
 setInterval(createLeaf,500)
+
