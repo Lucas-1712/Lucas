@@ -10,7 +10,7 @@ const images=["Leaf.png"];
 function createLeaf(){
 
 const leaf = document.createElement("img")
-leaf.src = "leaf.png"
+leaf.src = "Leaf.png"
 leaf.className = "leaf"
 
 let startX = Math.random() * window.innerWidth
@@ -28,5 +28,6 @@ leaf.remove()
 },duration*1000)
 
 }
+
 
 setInterval(createLeaf,500)
